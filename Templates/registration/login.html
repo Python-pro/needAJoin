@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+        <h1>  Please Login  </h1>
+        
+        <form method="POST">
+            {%csrf_token%}
+
+            {{form.as_p}}
+
+            <button type="Submit" class="btn btn-primary btn-lg">Login</button>
+
+        </form>
+    <body>
+            <a class="navlist" href="/accounts/">Back to Home</a
+    </body>    
+{% endblock %}
